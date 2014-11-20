@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    background-color: blue;
+    background-color: #50cfde;
 	color: #FFFFFF;
     height: 30px;
     width: 100%;
@@ -21,38 +21,31 @@
 }
 
 body {
-    font-size: 16px;
-    font-family: sans-serif;
-    line-height: 26px;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:12px;
+	letter-spacing:0.1em;
+	color:#555;
+	line-height: 14pt;
 }
 
 /* This is the subttitle text */
-h1 {font-family: 'Noto Serif', serif;
-    font-size: 16px;
-	line-height: 24px ;
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:20px;
+	margin:0px;
+	letter-spacing:0.05em;
+	font-weight:500;
     text-align: center;
-    font-style: italic;
-    font-weight: 400;
+	line-height: 28px ;
+
 }
 /* This is the references and footnotes */
-h2 {font-family: sans-serif;
+h2 {
     font-size: 12px;
     font-weight: lighter;
-    line-height: 20px;
-}
-
-/* This is the running text */
-h5 {font-family: 'Noto Serif', serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-h6 {
-}
-
-h4 {
-    text-align: center;
-    font-size: 12px;
+    line-height: 13px;
 }
 
 .columns { 
@@ -89,7 +82,7 @@ header {
 }
 
 a, a:hover, a:visited, a:active {
-    color: #1419FF;
+    color: #50cfde;
     text-decoration: none;
 }
 
@@ -151,23 +144,40 @@ img {
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
-    line-height: 16px;
     }
 
-   header {
-        font-size: 12px;
-		line-height: 16px;
-        margin-left: 16px;
-        margin-right: 16px;
-    } 
+header {
+	margin-left: 16px;
+	margin-right: 16px;
+} 
 
-    h1 {
-        font-size: 14px;
-		line-height: 16px;
-    } 
-    h5 {
-    font-size: 14px;
-	line-height: 18px;
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:10px;
+	letter-spacing:0.1em;
+	color:#555;
+	line-height: 12pt;
+}
+
+/* This is the subttitle text */
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:15px;
+	margin:0px;
+	letter-spacing:0.1em;
+	font-weight:500;
+    text-align: center;
+	line-height: 23px ;
+
+}
+
+/* This is the references and footnotes */
+h2 {
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 12px;
 }
      
 }
@@ -184,7 +194,7 @@ img {
 	
 	header h2 { 
 		font-size: 16px; 
-		font-color: red;
+		font-color: #50cfde;
 	}
     /* And the navigation we don’t need */
     nav {
