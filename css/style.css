@@ -1,6 +1,29 @@
+
 *{
     margin: 0;
     padding: 0;
+}
+
+@media only print  {
+    .navbar, #left, #right {
+        display: none;
+    }
+}	
+
+header {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:12px;
+	letter-spacing:0.1em;
+	color:#555;
+	line-height: 14pt;
 }
 
 .navbar {
@@ -14,21 +37,6 @@
     top: 0;
     left: 0;
 }
-@media only print  {
-    .navbar, #left, #right{
-        display: none;
-    }
-}
-
-body {
-	font-family: 'Roboto', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size:12px;
-	letter-spacing:0.1em;
-	color:#555;
-	line-height: 14pt;
-}
 
 /* This is the subttitle text */
 h1 {
@@ -39,13 +47,25 @@ h1 {
 	font-weight:500;
     text-align: center;
 	line-height: 28px ;
-
 }
+
 /* This is the references and footnotes */
 h2 {
     font-size: 12px;
     font-weight: lighter;
     line-height: 13px;
+}
+
+/* This is the subttitle text */
+h4 {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+    text-align: center;
+	letter-spacing:0.1em;
+	color:#555;
+    font-size: 9.5px;
+    font-weight: lighter;
+    line-height: 20px;
 }
 
 .columns { 
@@ -73,12 +93,6 @@ h2 {
 #right{
     left: inherit;
     right: 15px;
-}
-
-header {
-    font-size: 16px;
-    text-align: center;
-    padding-top: 20px;
 }
 
 a, a:hover, a:visited, a:active {
@@ -113,7 +127,7 @@ img {
 
 /* ipad - portrait */
 @media screen and (max-width: 768px) {
-    .columns {
+    header .columns {
     -webkit-column-gap: 100px;
     -webkit-column-count: 1; /* Chrome, Safari, Opera */
     -webkit-column-width: 100px;
@@ -125,10 +139,6 @@ img {
     margin-right: 50px;
     padding-bottom: 20px;
     }
-    header {
-        margin-left: 50px;
-        margin-right: 50px;
-    } 
 }
 
 /* iphone - portrait */
@@ -144,7 +154,7 @@ img {
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
-    }
+	}
 
 header {
 	margin-left: 16px;
@@ -180,24 +190,4 @@ h2 {
     line-height: 12px;
 }
      
-}
-
-@media only print {
-    /**
-     * When printing, the header is useful but it doesn’t need
-     * to be so big
-     */
-    header h1 {
-        font-size: 16px;
-        font-style: italic;
-    } 
-	
-	header h2 { 
-		font-size: 16px; 
-		font-color: #50cfde;
-	}
-    /* And the navigation we don’t need */
-    nav {
-        display: none;
-    }
 }
