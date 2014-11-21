@@ -51,8 +51,13 @@ h1 {
 
 /* This is the references and footnotes */
 h2 {
-    font-size: 12px;
-    line-height: 13px;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+    text-align: center;
+	letter-spacing:0.1em;
+	color:#555;
+    font-size: 9.5px;
+    line-height: 20px;
 }
 
 /* This is the subttitle text */
